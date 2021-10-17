@@ -1,37 +1,27 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
+import styles from '../styles/style';
+
 const Home = ({ navigation }) => {
 	return (
 		<View style={styles.container}>
 			<Text>This the Home screen</Text>
-			<Button
+			<Pressable
 				style={styles.button}
 				onPress={() => navigation.navigate('About Us')}
-				title="Go To About Us"
+				title="About Us"
 			>
-				<Text>Go to About Us</Text>
-			</Button>
-			<Button
+				<Text style={styles.text}>Go to About Us</Text>
+			</Pressable>
+			<Pressable
 				style={styles.button}
 				onPress={() => navigation.toggleDrawer()}
 				title="Side Nav"
 			>
-				<Text>Side Nav</Text>
-			</Button>
+				<Text style={styles.text}>Side Nav</Text>
+			</Pressable>
 		</View>
 	);
 };
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		alignItems: 'center',
-		justifyContent: 'center',
-	},
-	button: {
-		backgroundColor: '#09f',
-		alignItems: 'center',
-		padding: 10,
-		marginVertical: 10,
-	},
-});
+
 export default Home;

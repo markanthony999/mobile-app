@@ -13,14 +13,37 @@ const StackNavigator = () => {
 				name="Home"
 				component={DrawerNavigator}
 				options={{
-					title: 'Welcome',
+					title: 'EmpireComputing',
 					headerStyle: {
-						backgroundColor: '#09f',
+						backgroundColor: '#997f66',
 					},
+
+					headerTitleStyle: {
+						fontWeight: 'bold',
+						fontSize: 24,
+						color: 'white',
+					},
+					headerTitleAlign: 'center',
 				}}
 			/>
 			<Stack.Screen name="Welcome" component={Home} />
-			<Stack.Screen name="About Us" component={AboutUs} />
+
+			<Stack.Screen
+				name="About Us"
+				options={{
+					headerStyle: {
+						backgroundColor: '#997f66',
+					},
+
+					headerTitleStyle: {
+						fontWeight: 'bold',
+						fontSize: 24,
+						color: 'white',
+					},
+					headerTitleAlign: 'center',
+				}}
+				component={AboutUs}
+			/>
 		</Stack.Navigator>
 	);
 };

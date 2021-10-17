@@ -9,7 +9,13 @@ const Drawer = drawer.createDrawerNavigator();
 const DrawerNavigator = () => {
 	return (
 		<Drawer.Navigator>
-			<Drawer.Screen name="Home" component={Home} />
+			<Drawer.Screen
+				name="Home_1"
+				component={Home}
+				options={{
+					title: 'Home',
+				}}
+			/>
 			<Drawer.Screen name="Page 1" component={Page_1} />
 			<Drawer.Screen name="Page 2" component={Page_2} />
 			<Drawer.Screen name="Page 3" component={Page_3} />
