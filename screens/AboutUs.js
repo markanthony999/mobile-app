@@ -5,7 +5,7 @@ import styles from '../styles/style';
 const AboutUs = () => {
 	return (
 		<View style={styles.container}>
-			<Text>This is a About Us</Text>
+			<Text style={styles.text_1}>This is a About Us</Text>
 		</View>
 	);
 };

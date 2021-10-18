@@ -5,15 +5,7 @@ import styles from '../styles/style';
 const Page_1 = ({ navigation }) => {
 	return (
 		<View style={styles.container}>
-			<Text>This is Page 1</Text>
-
-			<Pressable
-				style={styles.button}
-				onPress={() => navigation.toggleDrawer()}
-				title="Side Bar"
-			>
-				<Text style={styles.text}>Side Bar</Text>
-			</Pressable>
+			<Text style={styles.text_1}>This is Page 1</Text>
 		</View>
 	);
 };
