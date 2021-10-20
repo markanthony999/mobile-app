@@ -1,12 +1,13 @@
 import React from 'react';
 import * as drawer from '@react-navigation/drawer';
-import { DrawerItems } from '@react-navigation/drawer';
+// import { DrawerContent } from '@react-navigation/drawer';
 import Home from '../screens/Home';
 import Page_1 from '../screens/Page_1';
 import Page_2 from '../screens/Page_2';
 import Page_3 from '../screens/Page_3';
 
 const Drawer = drawer.createDrawerNavigator();
+
 const DrawerNavigator = () => {
 	return (
 		<Drawer.Navigator
@@ -15,6 +16,11 @@ const DrawerNavigator = () => {
 					backgroundColor: '#fff',
 					fontSize: 24,
 					width: 225,
+				},
+				drawerLabelStyle: {
+					fontSize: 24,
+					color: '#997f66',
+					fontWeight: 'bold',
 				},
 			}}
 		>
