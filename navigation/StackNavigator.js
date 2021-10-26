@@ -13,9 +13,9 @@ const StackNavigator = () => {
 				name="Home"
 				component={DrawerNavigator}
 				options={{
-					title: 'EmpireComputing',
+					title: 'Fitness App',
 					headerStyle: {
-						backgroundColor: '#997f66',
+						backgroundColor: '#0e40f1',
 					},
 
 					headerTitleStyle: {
@@ -32,9 +32,9 @@ const StackNavigator = () => {
 				name="About Us"
 				options={{
 					headerStyle: {
-						backgroundColor: '#997f66',
+						backgroundColor: '#0e40f1',
 					},
-
+					headerLeft: null,
 					headerTitleStyle: {
 						fontWeight: 'bold',
 						fontSize: 24,

@@ -19,7 +19,7 @@ const DrawerNavigator = () => {
 				},
 				drawerLabelStyle: {
 					fontSize: 24,
-					color: '#997f66',
+					color: '#0e40f1',
 					fontWeight: 'bold',
 				},
 			}}

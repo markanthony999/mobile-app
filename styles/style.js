@@ -3,16 +3,16 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		alignItems: 'center',
-		justifyContent: 'center',
+		paddingTop: 20,
+		// alignItems: 'center',
+		// justifyContent: 'center',
 	},
 
 	button: {
-		backgroundColor: '#997f60',
-		borderRadius: 10,
+		backgroundColor: '#0e40f1',
+		width: '100%',
 		alignItems: 'center',
 		padding: 10,
-		marginVertical: 20,
 	},
 
 	text: {
@@ -22,7 +22,9 @@ const styles = StyleSheet.create({
 	},
 
 	text_1: {
+		flex: 1,
 		color: 'black',
+		padding: 20,
 		fontSize: 20,
 		fontWeight: 'bold',
 	},
